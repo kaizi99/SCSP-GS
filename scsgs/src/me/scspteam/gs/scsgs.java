@@ -1,7 +1,6 @@
 package me.scspteam.gs;
 
 import org.bukkit.ChatColor;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class scsgs extends JavaPlugin
