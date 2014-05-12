@@ -1,0 +1,16 @@
+name: SCS-GS
+version: 0.1
+description: Ein Plugin zum Verwalten der Grundstuecke auf dem SCS
+website: skatescs.de
+author: SCSP-Team
+main: me.scspteam.gs.scsgs
+
+commands:
+ gs:
+  description: Der allgemeine GS-Befehl
+  usage: /<command> [arg1] [arg2] [arg3]
+  permission: scsgs.gs
+ we:
+  description: Test der WorldEdit-API
+  usage: /<command>
+  permission: scsgs.we
