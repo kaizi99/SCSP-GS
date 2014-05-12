@@ -1,6 +1,7 @@
 package me.scspteam.gs;
 
 import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
@@ -12,7 +13,7 @@ import com.sk89q.worldedit.blocks.BlockID;
 import com.sk89q.worldedit.bukkit.selections.CuboidSelection;
 import com.sk89q.worldedit.regions.Region;
 
-public class CE_we 
+public class CE_we implements CommandExecutor
 {
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) 
 	{
