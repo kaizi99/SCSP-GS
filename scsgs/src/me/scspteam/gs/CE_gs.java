@@ -4,6 +4,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 
 public class CE_gs implements CommandExecutor
 {
@@ -18,6 +19,7 @@ public class CE_gs implements CommandExecutor
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) 
 	{	 
+		GS gs;
 		if (cmd.getName().equalsIgnoreCase("gs")) 
 		{
 			if(args.length == 0)
@@ -43,6 +45,10 @@ public class CE_gs implements CommandExecutor
 				sender.sendMessage(ChatColor.GOLD + "[Skate´s Community Server] " + ChatColor.GOLD + "du bekommst eine Nachricht, dass du an diesem Platz nicht bauen kannst.");
 				sender.sendMessage(ChatColor.GOLD + "[Skate´s Community Server] " + ChatColor.GOLD + "Falls die deine Auswahl nicht gefaellt, gibst du '/gs nein' ein und du kannst weiter");
 				sender.sendMessage(ChatColor.GOLD + "[Skate´s Community Server] " + ChatColor.GOLD + "dein Grundstück anpassen. Den GS-Modus kannst du mit '/gs leave' verlassen.");
+			}
+			if(args.length == 1 && args[0] == "start")
+			{
+				gs = new GS((Player) sender);
 			}
 		}
 		return false;
